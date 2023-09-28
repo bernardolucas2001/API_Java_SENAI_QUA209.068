@@ -1,0 +1,35 @@
+package com.bernardo.cadastroDePessoa.controller;
+
+import java.util.Arrays;
+
+import org.hibernate.mapping.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bernardo.cadastroDePessoa.model.Pessoa;
+import com.bernardo.cadastroDePessoa.repository.PessoaRepository;
+
+
+
+@RestController
+@RequestMapping("/pessoas")
+public class PessoaController {
+	
+	@Autowired
+	private PessoaRepository pessoaRepository;
+	
+	@GetMapping("/listar_pessoas")
+	public List<Pessoa> listarPessoas() {
+		
+		Pessoa p1 = new Pessoa("breno","1234567890","12091987","Sobradinho","889909197");
+		Pessoa p2 = new Pessoa("breno","1234567890","12091987","Sobradinho","889909197");
+		Pessoa p3 = new Pessoa("breno","1234567890","12091987","Sobradinho","889909197");
+		
+		return Arrays.asList(p1, p2, p3);
+		
+	}
+	
+
+}

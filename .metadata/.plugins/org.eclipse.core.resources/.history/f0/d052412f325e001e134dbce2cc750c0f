@@ -1,0 +1,5 @@
+package com.bernardo.cadastroDePessoa.repository;
+
+public class PessoaRepository {
+
+}

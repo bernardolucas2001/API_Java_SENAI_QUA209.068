@@ -1,0 +1,5 @@
+package com.bernardo.cadastroDePessoa.model;
+
+public class PessoaModel {
+
+}

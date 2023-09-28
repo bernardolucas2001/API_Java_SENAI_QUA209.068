@@ -1,0 +1,11 @@
+package com.bernardo.cadastroDePessoa.model;
+
+public class PessoaModel {
+
+	private Long id;
+	private String nome;
+	private String cpf;
+	private String dataNascimento;
+	private String endereco;
+	private String telefone;
+}
