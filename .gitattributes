@@ -1,3 +1,1 @@
-*.javascript linguist-detectable=false
-*.java linguist-detectable=true
-jquery.js linguist-vendored=false
+*.rb linguist-language=Java
